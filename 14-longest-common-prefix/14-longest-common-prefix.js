@@ -8,9 +8,9 @@ var longestCommonPrefix = function(strs) {
     let minLen = Math.min(...lenArr);
     let first = strs[0][0];    
     if(first == undefined) return "";
-    console.log(strs);
-    console.log(`first : ${first}`);
-    console.log(minLen);
+    // console.log(strs);
+    // console.log(`first : ${first}`);
+    // console.log(minLen);
     
     for(let i = 0; i < minLen; i++){
         // 1. 0번째 인덱스 첫번째 문자 확인 (let first)
@@ -18,11 +18,11 @@ var longestCommonPrefix = function(strs) {
         // 2. first와 나머지 인덱스의 첫번째 문자 체크
         for(let j of strs){
             if(j.startsWith(first)){
-                console.log('pass');
+                // console.log('pass');
                 continue;
             }else{
-                console.log('fail');
-                console.log(first.substring(0, first.length - 1));
+                // console.log('fail');
+                // console.log(first.substring(0, first.length - 1));
                 return first.substring(0, first.length - 1);
             }
             
