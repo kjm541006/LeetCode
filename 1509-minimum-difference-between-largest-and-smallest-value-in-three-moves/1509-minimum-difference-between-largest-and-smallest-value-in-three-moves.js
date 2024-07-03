@@ -7,7 +7,7 @@ var minDifference = function(nums) {
   let caseArr = [];
   let len = nums.length;
   if(len <= 4) return 0;
-  for(let i = 0; i < len - 1; i++){
+  for(let i = 0; i <= 3; i++){
     caseArr.push(nums[len - i - 1] - nums[3 - i]);
   }
 
